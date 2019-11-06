@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-   
+
 </head>
 
 <body>
     <p id="script"></p>
 
     <script>
-            for (var i = 1; i <= 100; i++) {
-                document.getElementById('script').innerHTML += i + "<br>";
+        for (var i = 1; i <= 100; i++) {
+            if (i % 15 === 0) {
+                console.log("FizzBuzz");
+            } else if (i % 3 === 0) {
+                console.log("Fizz");
+            } else if (i % 5 === 0) {
+                console.log("Buzz");
+            } else {
+                console.log(i)
             }
-        </script>
+        }
+    </script>
 
 </body>
 
